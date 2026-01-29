@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Queen Hair Beauty Center | صالون بيوتي هاوس</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #F7F6F0;
+        --surface: #FFFFFF;
+        --surface2: rgba(255, 255, 255, 0.85);
+        --text: #1A1418;
+        --muted: #4D505C;
+        --pink: #FF2D9A;
+        --pink2: #DF829E;
+        --gold: #C4AD70;
+        --gold2: #A48643;
+        --lavender: #B88BB5;
+        --orchid: #502E6C;
+        --shadowSoft: 0 10px 30px rgba(26, 20, 24, 0.08);
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        overflow-x: hidden;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+
+      .ar {
+        font-family: 'Cairo', sans-serif;
+      }
+
+      /* Animated Gradient Mesh */
+      .mesh-gradient {
+        background-color: var(--bg);
+        background-image: 
+          radial-gradient(at 0% 0%, hsla(328, 100%, 59%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 100% 0%, hsla(291, 26%, 63%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 100% 100%, hsla(43, 44%, 60%, 0.15) 0px, transparent 50%),
+          radial-gradient(at 0% 100%, hsla(328, 100%, 59%, 0.1) 0px, transparent 50%);
+        animation: meshMove 20s ease-in-out infinite alternate;
+      }
+
+      @keyframes meshMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+
+      .glass-panel {
+        background: var(--surface2);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      .gold-border {
+        border: 1px solid var(--gold);
+      }
+      
+      .text-shadow-sm {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 4px;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ivory: '#F7F6F0',
+              charcoal: '#1A1418',
+              'queen-pink': '#FF2D9A',
+              'queen-pink-soft': '#DF829E',
+              'queen-gold': '#C4AD70',
+              'queen-gold-dark': '#A48643',
+              'queen-lavender': '#B88BB5',
+              'queen-orchid': '#502E6C',
+            },
+            fontFamily: {
+              serif: ['Playfair Display', 'serif'],
+              sans: ['Poppins', 'sans-serif'],
+              arabic: ['Cairo', 'sans-serif'],
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

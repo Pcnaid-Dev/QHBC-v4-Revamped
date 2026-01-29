@@ -1,0 +1,9 @@
+{
+  "name": "Queen Hair Beauty Center - Revamped 4",
+  "description": "A premium, Barbie-core glam salon web application featuring AI Beauty Try-On, online booking, and service showcase.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
